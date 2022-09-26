@@ -1,0 +1,567 @@
+:root{
+	/** FUENTES **/
+	--fuenteHeading: 'PT Sans', sans-serif;
+	--fuenteParrafos: 'Open Sans', sans-serif;
+	/** COLORES **/
+	--primario: #1693a5;
+	--secundario: #45b5c4;
+	--primario-light: #c7ede8;
+	--secundario-light: #a0ded6;
+	--blanco: #ffffff;
+	--negro: #000000;
+}
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;	/* Para que 1rem = 10px*/
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+body{
+	font-family: var(--fuenteParrafos);
+	font-size: 1.6rem;
+	line-height: 2;
+}
+
+/***** GLOBALES *****/ 
+a{
+	text-decoration: none;
+}
+h1,h2,h3,h4{
+	font-family: var(--fuenteHeading);
+}
+h1{
+	font-size: 4.8rem;
+}
+h2{
+	font-size: 4rem;
+}
+h3{
+	font-size: 3.2rem;
+}
+h4{
+	font-size: 2.8rem;
+}
+img{
+	max-width: 100%;
+}
+.centered-section{
+	border: solid black thin;
+	margin-top: 5rem;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 140rem;
+}
+.social-icon{
+	opacity: 0.5;
+	transition: 0.5s;
+	font-size: 2rem;
+	margin-right: 0.7rem;
+	margin-left: 0.7rem;
+}
+.social-icon:hover{
+	opacity: 1;
+	transition: 0.5s;
+}
+@media (max-width: 768px){
+	.social-icon{
+		margin-left: 1.3rem;
+		margin-right: 1.3rem;
+	}
+}
+
+/***** UTILIDADES *****/
+.no-margin{
+	margin: 0;
+}
+.no-padding{
+	padding: 0;
+}
+.centrar-texto{
+	text-align: center;
+}
+.title-sub{
+	font-style: italic;
+	font-weight: normal;
+}
+/***** CSS PARA NAVBAR Y HEADER *****/
+#logo__title{
+	font-family: var(--fuenteHeading);
+	font-size: 2.8rem;
+}
+#header__link{
+	font-family: var(--fuenteParrafos);
+	font-size: 1.8rem;
+}
+#log__in{
+	font-family: var(--fuenteParrafos);
+	font-size: 1.8rem;
+}
+#menu__toggler{
+	font-size: 2.5rem;
+}
+@media (min-width: 768px){
+	.navegacion{
+		justify-content: end;
+		gap: 3rem;
+	}
+	.navegacion__enlaces{
+		gap: 1.5rem;
+	}
+}
+
+/***** Header *****/
+.header{
+	background-image: url(https://blog.nfon.com/hubfs/6-diferencias-call-center-contact-center.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+  	display: flex;
+ 	min-height: 60rem;
+ 	margin-right: auto;
+  	margin-left: auto;
+  	padding-right: 5%;
+  	padding-left: 5%;
+  	align-items: center;
+}
+.header__grid{
+  	display: flex;
+  	max-width: 940px;
+  	margin-right: auto;
+  	margin-left: auto;
+  	flex-direction: column;
+  	align-items: center;
+  	grid-auto-columns: 1fr;
+  	grid-template-columns: 0.75fr 0.25fr;
+  	grid-template-rows: auto;
+  	text-align: center;
+}
+.title-1{
+	margin-bottom: 3rem;
+	line-height: 6rem;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: var(--primario);
+	font-weight: bold;
+}
+.header__subtitle{
+ 	font-size: 23px;
+  	line-height: 3rem;
+  	font-weight: 300;
+  	color: var(--secundario);
+}
+.button-flex{
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+	padding: 5px;
+	min-width: 20rem;
+	min-height: 6rem;
+	box-sizing: border-box;
+}
+#button-type2{
+	font-size: 1.8rem;
+	border-radius: 1.8rem;
+	padding: 8px 30px;
+	background-color: var(--primario);
+	border-color: var(--primario);
+}
+#button-type2:hover{
+	background-color: var(--primario-light);
+	color: var(--primario);
+	border: solid var(--primario) thin;
+	font-size: 1.6rem;
+	padding: 8px 30px;
+	transition: .5s;
+}
+@media (max-width: 767px){
+	.header{
+		min-height: 45rem;
+	}
+	.title-1{
+		font-size: 3.8rem;
+	}
+	.header__subtitle{
+		font-size: 2.3rem;
+	}
+	#button-type2{
+		font-size: 1.3rem;
+	}
+	#button-type2:hover{
+		font-size: 1rem;
+	}
+}
+
+/***** MAIN DE LA PAGINA *****/
+.main__contene{
+	margin: 5rem 0;
+	margin-top: 15rem;
+	padding: 1rem;
+}
+#icono__title{
+	color: var(--primario);
+	text-transform: uppercase;
+}
+.iconos__clientes{
+	margin-top: 4rem;
+}
+.icono{
+	text-align: center;
+	margin: 1rem 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 30rem;
+}
+.img__icono{
+	height: 10rem;
+	margin: 1rem 0;
+	padding: 5px;
+	opacity: 0.5;
+}
+#icono__texto{
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	max-width: 20rem;
+}
+@media(max-width: 890px){
+	.icono{
+		max-width: 25rem;
+	}
+	#icono__title{
+		font-size: 3.5rem;
+	}
+	.img__icono{
+		height: 7rem;
+	}
+	#icono_texto{
+		font-size: 1rem;
+	}
+}
+
+/***** SECTION - ABOUT US *****/
+.seccion-somos{
+	padding: 1rem;
+	width: 100%;
+	margin: 0;
+	margin-top: 15rem;
+	display: flex;
+}
+.somos__img{
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.img-somos{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 0;
+}
+.somos-flex{
+	padding: 0;
+}
+.title-section{
+	display: flex;
+	align-items: start;
+	justify-content: start;
+	padding: 0;
+	max-width: 9rem;
+	margin: 0;
+	color: var(--primario);
+}
+#title-somos1{
+	text-transform: uppercase;
+	font-size: 1rem;
+	align-self: start;
+	width: 9rem;
+	text-align: start;
+	margin: 0;
+}
+#title-somos2{
+	text-transform: uppercase;
+	font-size: 3rem;
+}
+.somos-content{
+	margin: 0;
+}
+#contenido-somos{
+	font-size: 1.4rem;
+}
+#button-type3{
+	font-size: 1.4rem;
+	border-radius: 1.8rem;
+	padding: 8px 30px;
+	background-color: var(--primario);
+	border-color: var(--primario);
+}
+#button-type3:hover{
+	background-color: var(--primario-light);
+	color: var(--primario);
+	border: solid var(--primario) thin;
+	padding: 8px 30px;
+	transition: .5s;
+}
+@media (min-width: 992px) and (max-width: 1322px) {
+	.somos-flex{
+		display: inline-block;
+	}
+	.title-section{
+		width: 100%;
+		max-width: 100%;
+	}
+	#title-somos1{
+		font-size: 1.2rem;
+		width: 100%;
+		padding: 0;
+	}
+	.somos-content{
+		width: 100%;
+	}
+	#title-somos2{
+		font-size: 2.7rem;
+	}
+	#contenido-somos{
+		font-size: 1.2rem;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.somos-flex{
+		margin-top: 5rem;
+		padding: 0;
+	}
+	.title-section{
+		width: inherit;
+		min-width: inherit;
+	}
+	#title-somos1{
+		font-size: 1rem;
+		max-width: 100%;
+		min-width: 100%;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+	#title-somos2{
+		font-size: 3.2rem;
+	}
+	#contenido-somos{
+		font-size: 1.5rem;
+	}
+	#button-type3{
+		font-size: 1.6rem;
+	}
+}
+@media (max-width: 768px) {
+	.somos-flex{
+		margin-top: 5rem;
+		padding: 0;
+	}
+	.title-section{
+		width: inherit;
+		min-width: inherit;
+	}
+	#title-somos1{
+		font-size: 1rem;
+		max-width: 100%;
+		min-width: 100%;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+	#title-somos2{
+		font-size: 3.2rem;
+	}
+	#contenido-somos{
+		font-size: 1.5rem;
+	}
+	#button-type3{
+		font-size: 1.6rem;
+	}
+}
+@media (max-width: 613px) {
+	.title-section{
+		display: flex;
+		max-width: 100%;
+	}
+	#title-somos1{
+		font-size: 1.3rem;
+		text-align: start;
+	}
+	.somos-content{
+		width: 100%;
+		margin-top: 0.5rem;
+	}
+	#title-somos2{
+		font-size: 3rem;
+	}
+	#contenido-somos{
+		font-size: 1.4rem;
+	}
+	#button-type3{
+		font-size: 1.5rem;
+	}
+}
+
+/***** SECTION - FEEDBACK *****/
+.seccion-feedback{
+	margin-top: 15rem;
+}.title-feedback{
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	color: var(--primario);
+	padding: 0;
+}
+.img__quote{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+/* Text for small screens*/ 
+@media (max-width: 767px) {
+	.opinion{
+		font-size: 1.2rem;
+	}
+}
+/* Text for medium screens*/ 
+@media (min-width: 768px) and (max-width: 991px) {
+	.opinion{
+		font-size: 1rem;
+	}
+}
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+/* medium and up screens */
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+/* make arrows darker */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0);
+}
+/* adjusting (stretching) slide's card to max height */
+.carousel-item .container {
+  display: flex;
+  flex-direction: column;
+}
+.carousel-item .card {
+  flex-grow: 1;
+}
+.control-icon-prev{
+	display: flex;
+	justify-content: start;
+}
+.control-icon-next{
+	display: flex;
+	justify-content: end;
+}
+.tam{
+	width: 3.5rem;
+	height: 3.5rem;
+}
+
+/***** SECTION CONTACT *****/
+.contact-section{
+	background-image: url(https://cdn.bizneo.com/blog/wp-content/uploads/2020/04/departamentos-de-una-empresa.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+  	display: flex;
+ 	min-height: 60rem;
+ 	margin-right: auto;
+  	margin-left: auto;
+  	margin-top: 15rem;
+  	margin-bottom: auto;
+  	padding-right: 5%;
+  	padding-left: 5%;
+  	align-items: center;
+}
+.contact__grid{
+  	display: flex;
+  	max-width: 940px;
+  	margin-right: auto;
+  	margin-left: auto;
+  	flex-direction: column;
+  	align-items: center;
+  	grid-auto-columns: 1fr;
+  	grid-template-columns: 0.75fr 0.25fr;
+  	grid-template-rows: auto;
+  	text-align: center;
+}
+.title-3{
+	margin-bottom: 3rem;
+	line-height: 6rem;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: var(--primario);
+}
+.contact__subtitle{
+ 	font-size: 23px;
+  	line-height: 3rem;
+  	font-weight: 300;
+  	color: var(--secundario);
+}
+.button-flex{
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+	padding: 5px;
+	min-width: 20rem;
+	min-height: 6rem;
+	box-sizing: border-box;
+}
+#button-type2{
+	font-size: 1.8rem;
+	border-radius: 1.8rem;
+	padding: 8px 30px;
+	background-color: var(--primario);
+	border-color: var(--primario);
+}
+#button-type2:hover{
+	background-color: var(--primario-light);
+	color: var(--primario);
+	border: solid var(--primario) thin;
+	font-size: 1.6rem;
+	padding: 8px 30px;
+	transition: .5s;
+}
+@media (max-width: 767px){
+	.title-3{
+		font-size: 3.8rem;
+	}
+	.contact__subtitle{
+		font-size: 2.3rem;
+	}
+	#button-type2{
+		font-size: 1.3rem;
+	}
+	#button-type2:hover{
+		font-size: 1rem;
+	}
+}
