@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Iniciar Sesión LCC</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/logStyle.css">
+</head>
+<body>
+
+	<div class="container-fluid" id="fondo">
+		
+		<form id="formulario" class="animate slide">
+			<div class="text-center mb-3" id="imgUser">
+				<p><i class="bi bi-person-fill" id="icon"></i></p>
+			</div>
+			<h3 class="text-center mb-5">Inicia Sesión</h3>
+
+			<!-- Email input -->
+			<div class="form-floating mb-4">
+			  <input type="name" class="form-control" id="floatingInput" placeholder="User" >
+			  <label for="floatingInput" class="logLabel">Usuario</label>
+			</div>
+
+  			<!-- Password input -->
+			<div class="form-floating mb-5">
+			  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+			  <label for="floatingPassword" class="logLabel">Contraseña</label>
+			</div>
+
+  			<!-- Submit button -->
+  			<div class="text-center enlaces">
+  				<button type="submit" class="btn btn-primary mb-2" id="button-type3">Iniciar Sesión</button>
+  				<a href="index.html">Volver</a>
+  			</div>
+
+		</form>
+
+	</div>
+
+
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

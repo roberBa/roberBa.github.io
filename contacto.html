@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto LCC</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+	<!----- NAVBAR Y HEADER ----->
+	<nav class="navbar navbar-expand-md">	<!--- Navbar colapsa cuando pantalla chica --->
+		<div class="container-md nav-contene">
+			<!--- LOGO --->
+			<a class="navbar-brand" href="index.html" id="logo__title">LCC<b>ContactCenter</b></a>
+			<!--- Boton modal --->
+			<button id="menu__toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			   	<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!--- Enlaces navegación NavBar --->
+			<div class="collapse navbar-collapse navegacion" id="navbarSupportedContent">
+			    <ul class="navbar-nav mb-2 mb-lg-0 px-3 navegacion__enlaces">
+				    <li class="nav-item list-element">
+				        <a class="nav-link" href="nosotros.html" id="header__link">Nosotros</a>
+				    </li>
+				    <li class="nav-item list-element">
+				        <a class="nav-link" href="#" id="header__link">Vacantes</a>
+				    </li>
+				    <li class="nav-item list-element">
+				        <a class="nav-link" href="contacto.html" id="header__link">Contacto</a>
+				    </li>
+			    </ul>
+				<a class="btn btn-outline-success" href="logIn.html" id="log__in">Iniciar Sesión</a>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+
+	<!----- TITULAR CONTENEDOR ----->
+	<section class="mainContact container-fluid">
+		<!---- TITULO ---->
+		<div class="text-center container-fluid" id="T-sect">
+			<h1 id="ct">Contactanos</h1>
+			<h3 id="cst">Estamos a tus órdenes. Completa los campos a continuación o puedes enviarnos un correo o hacer una llamada.</h3>
+
+			<div class="container row" id="conta-contene">
+				<div class="col-sm-12 col-md-6 col-lg-5 row" id="opt1">
+						<div class="col-2 col-md-3 col-lg-3 col-xl-2 col-icon">
+							<div>
+								<i class="bi bi-envelope-fill"></i>
+							</div>	
+						</div>
+						<div class="col-8 col-md-7 col-lg-8 col-xl-8 col-parr">
+							<p>Envianos un mensaje</p>
+							<p id="pb">contact.lcc@mail.com</p>
+						</div>
+				</div>
+
+				<div class="col-sm-12 col-md-6 col-lg-5 row" id="opt2">
+						<div class="col-2 col-md-3 col-lg-3 col-xl-2 col-icon">
+							<div>
+								<i class="bi bi-telephone-fill"></i>
+							</div>	
+						</div>
+						<div class="col-8 col-md-7 col-lg-8 col-xl-8 col-parr">
+							<p>Llámanos</p>
+							<p id="pb">(222)222 22 22</p>
+						</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!---- CONTENEDOR FORMULARIO ---->
+		<div class="row conteneForm">
+			<div class="col-11 col-lg-5 col-md-9 col-sm-10 imagen-contacto">
+				<img src="https://images.unsplash.com/photo-1622151834677-70f982c9adef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFuJTIwd2l0aCUyMGxhcHRvcHxlbnwwfHwwfHw%3D&w=1000&q=80" alt="contacto" class="img-contacto">
+			</div>
+			<div class="contactoForm col-11 col-lg-5 col-md-9 col-sm-10">
+				<div class="row rowForm">
+					<div class="colForm col-12 col-sm-6">
+						<label for="nameForm" class="form-label">Nombre</label>
+  						<input type="name" class="form-control" id="nameForm" placeholder="Jhon Doe">
+					</div>
+					<div class="colForm col-12 col-sm-6">
+						<label for="emailForm" class="form-label">Email address</label>
+  						<input type="email" class="form-control" id="emailForm" placeholder="name@example.com">
+					</div>
+				</div>
+				<div class="row rowForm">
+					<div class="colForm col-12 col-sm-6 ">
+  						<label for="companyForm" class="form-label">Compañía <span>(Opcional)</span></label>
+  						<input type="text" class="form-control" id="companyForm" placeholder="Compañía">
+  					</div>
+  					<div class="colForm col-12 col-sm-6">
+  						<label for="phoneForm" class="form-label">Teléfono</label>
+  						<input type="tel" class="form-control" id="phoneForm" placeholder="222 222 22 22">
+					</div>
+				</div>
+				<div class="row rowForm">
+					<div class="colForm col">
+						<label for="messageForm" class="form-label">Mensaje</label>
+  						<textarea class="form-control" id="messageForm" rows="4"></textarea>
+					</div>
+				</div>
+				<div class="row rowForm mt-5 text-center">
+					<div class="col">
+						<input class="btn btn-primary" id="button-type3" type="submit" value="Enviar">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!----- CONTENEDOR CLIENTES ----->
+	<section class="container-fluid" id="our-clients">
+		<div class="row" style="display: flex; justify-content: space-evenly;">
+
+			<div class="col-lg-5 col-md-11 row" id="title-cliente">
+				<div class="col-12 col-sm" id="titulo">
+					<h3 id="icono__title">Nuestros clientes</h3>
+				</div>
+				<div class="col-12 col-sm" id="subtitulo">
+					<h3>Orgullosos de colaborar junto a <span class="title-sub">marcas líderes</span></h3>
+				</div>
+			</div>
+
+			<div class="col-lg-5 col-md-8 row" id="icons-clientes">
+				<div class="icono2 col-4">
+					<img class="img__icono2" src="img/building.svg" alt="icono1" loading="lazy">
+				</div>
+				<div class="icono2 col-4">
+					<img class="img__icono2" src="img/globe2.svg" alt="icono2" loading="lazy">
+				</div>
+				<div class="icono2 col-4">
+					<img class="img__icono2" src="img/trophy.svg" alt="icono3" loading="lazy">
+				</div>
+				<div class="icono2 col-4">
+					<img class="img__icono2" src="img/house.svg" alt="icono1" loading="lazy">
+				</div>
+				<div class="icono2 col-4">
+					<img class="img__icono2" src="img/boxes.svg" alt="icono3" loading="lazy">
+				</div>
+				<div class="icono2 col-4">
+					<img class="img__icono2" src="img/gift.svg" alt="icono1" loading="lazy">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<!----- SECCION DONDE ENCONTRARNOS ----->
+	<section class="container-fluid" style="margin-top: 20rem;">
+		<h5 class="mb-3 centrar-texto" id="map-title">Donde encontrarnos</h5>
+		<h2 class="centrar-texto smdv-subtitle mx-5 text-uppercase"><span class="title-sub">Visítanos</span> en nuestras instalaciones cuando gustes</h2>
+
+		<!-- Contenedor general con maps -->
+		<div id="contene-maps">
+
+	<!----- PUEBLA MAP ----->
+			<div class="ubi row mb-4">
+				<!-- Google Map -->
+				<div class="map col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.7506713127354!2d-98.22037187519514!3d19.04168279064869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7daee1927af%3A0xd421c9b7d15dfa64!2sLCC%20Contact%20Center!5e0!3m2!1ses-419!2smx!4v1664563392318!5m2!1ses-419!2smx" class="h-100 w-100" style="border-radius:3rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<!-- Address Container -->
+				<div class="dir col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+					<div class="text-white" id="dir-contene">
+						<h2 class="text-uppercase" style="font-weight: bold;">Puebla</h2>
+						<h3 class=>Dirección:</h3>
+						<h4 class="text-center">C. 23 Sur 2710, Los Volcanes, <br> 
+							 72410 Puebla, Pue.</h4>
+
+			        	<div>
+		            	<h3 class="font-weight-bold text-center">Síguenos:</h3>
+		            	<div>
+			            	<!-- Facebook -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-facebook"></i>
+				            </a>
+
+				            <!-- Twitter -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-twitter"></i>
+				          	</a>
+
+				            <!-- Google -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-google"></i>
+				          	</a>
+
+				            <!-- Instagram -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-instagram"></i>
+				          	</a>
+
+				            <!-- Linkedin -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-linkedin "></i>    <!---- CHANGE FOR INDEED LOGO-LINK ---->
+				          	</a>
+			          	</div>
+		          	</div>
+
+			      </div>
+				</div>
+			</div>
+
+
+			<hr style="width: 80%;">
+
+
+	<!----- TEZIUTLAN MAP (display 1) ----->
+			<div class="ubi disp-1 row mb-4">
+				<!-- Address Container -->
+				<div class="dir-2 col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+					<div class="text-white" id="dir-contene">
+						<h2 class="text-uppercase" style="font-weight: bold;">Teziutlán</h2>
+						<h3 class=>Dirección:</h3>
+						<h4 class="text-center">Av Juan de la Barrera 1, Barrio de Ahuateno, <br> 
+							 73967 Teziutlán, Pue.</h4>
+
+			        	<div>
+		            	<h3 class="font-weight-bold text-center">Síguenos:</h3>
+		            	<div>
+			            	<!-- Facebook -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-facebook"></i>
+				            </a>
+
+				            <!-- Twitter -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-twitter"></i>
+				          	</a>
+
+				            <!-- Google -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-google"></i>
+				          	</a>
+
+				            <!-- Instagram -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-instagram"></i>
+				          	</a>
+
+				            <!-- Linkedin -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-linkedin "></i>    <!---- CHANGE FOR INDEED LOGO-LINK ---->
+				          	</a>
+			          	</div>
+		          	</div>
+
+			      </div>
+				</div>
+				<!-- Google Map -->
+				<div class="map-2 col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.263498714484!2d-97.35940841257894!3d19.828800716492413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85daeb16abb9057b%3A0x1ddc59fd1b5e3d78!2sLCC%20Contact%20Center!5e0!3m2!1ses-419!2smx!4v1664824959554!5m2!1ses-419!2smx" class="h-100 w-100" style="border-radius:3rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+
+
+	<!----- TEZIUTLAN MAP (display 2) ----->
+			<div class="ubi disp-2 row mb-4">
+				<!-- Google Map -->
+				<div class="map col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.263498714484!2d-97.35940841257894!3d19.828800716492413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85daeb16abb9057b%3A0x1ddc59fd1b5e3d78!2sLCC%20Contact%20Center!5e0!3m2!1ses-419!2smx!4v1664824959554!5m2!1ses-419!2smx" class="h-100 w-100" style="border-radius:3rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<!-- Address Container -->
+				<div class="dir col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+					<div class="text-white" id="dir-contene">
+						<h2 class="text-uppercase" style="font-weight: bold;">Teziutlán</h2>
+						<h3 class=>Dirección:</h3>
+						<h4 class="text-center">Av Juan de la Barrera 1, Barrio de Ahuateno, <br> 
+							 73967 Teziutlán, Pue.</h4>
+
+			        	<div>
+		            	<h3 class="font-weight-bold text-center">Síguenos:</h3>
+		            	<div>
+			            	<!-- Facebook -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-facebook"></i>
+				            </a>
+
+				            <!-- Twitter -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-twitter"></i>
+				          	</a>
+
+				            <!-- Google -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-google"></i>
+				          	</a>
+
+				            <!-- Instagram -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-instagram"></i>
+				          	</a>
+
+				            <!-- Linkedin -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-linkedin "></i>    <!---- CHANGE FOR INDEED LOGO-LINK ---->
+				          	</a>
+			          	</div>
+		          	</div>
+
+			      </div>
+				</div>
+			</div>
+
+
+			<hr style="width: 80%;">
+
+
+	<!----- ZACAPOAXTLA MAP ----->
+			<div class="ubi row mb-4">
+				<!-- Google Map -->
+				<div class="map col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.1801379214558!2d-97.59026578529148!3d19.874614031548195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85da970791ba5401%3A0x3f76e849546256!2sLCC%20CONTACT%20CENTER%20ZACAPOAXTLA!5e0!3m2!1ses-419!2smx!4v1664825194783!5m2!1ses-419!2smx" class="h-100 w-100" style="border-radius:3rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<!-- Address Container -->
+				<div class="dir col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+					<div class="text-white" id="dir-contene">
+						<h2 class="text-uppercase" style="font-weight: bold;">Zacapoaxtla</h2>
+						<h3 class=>Dirección:</h3>
+						<h4 class="text-center">Abasolo 2, en centro, Centro, <br> 
+							 73680 Zacapoaxtla, Pue.</h4>
+
+			        	<div>
+		            	<h3 class="font-weight-bold text-center">Síguenos:</h3>
+		            	<div>
+			            	<!-- Facebook -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-facebook"></i>
+				            </a>
+
+				            <!-- Twitter -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-twitter"></i>
+				          	</a>
+
+				            <!-- Google -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-google"></i>
+				          	</a>
+
+				            <!-- Instagram -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-instagram"></i>
+				          	</a>
+
+				            <!-- Linkedin -->
+				            <a class="mx-2 text-white social-icon-map" href="#!" role="button">
+				               <i class="bi bi-linkedin "></i>    <!---- CHANGE FOR INDEED LOGO-LINK ---->
+				          	</a>
+			          	</div>
+		          	</div>
+			      </div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+	<!----- FOOTER ----->
+	<footer class="text-center text-lg-start text-white" style="background-color: var(--secundario); margin-top: 15rem;">
+	  	<!-- Grid container -->
+	    <div class="container p-4 pb-0">
+	        <!-- Section: Links -->
+	        <section class="">
+		        <!--Grid row-->
+		        <div class="row">
+		           <!-- Grid column -->
+			        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+			          	<h4 class="text-uppercase mb-4 font-weight-bold">  <!--------****SWITCH THIS HEAD FOR LOGO****-------->
+			            	Company Logo
+			            </h4>
+			        </div>
+		            <!-- Grid column -->
+
+		          	<hr class="w-100 clearfix d-md-none" />
+
+		          	<!-- Grid column -->
+		          	<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+		            	<h4 class="text-uppercase mb-4 font-weight-bold">Links</h4>
+		            	<p>
+		              		<a class="text-white footer-link" href="index.html">Inicio</a>
+		            	</p>
+			            <p>
+			              <a class="text-white footer-link" href="nosotros.html">Nosotros</a>
+			            </p>
+			            <p>
+			              <a class="text-white footer-link" href="#">Vacantes</a>
+			            </p>
+			            <p>
+			              <a class="text-white footer-link" href="contacto.html">Contacto</a>
+			            </p>
+		          	</div>
+		          	<!-- Grid column -->
+
+		          	<hr class="w-100 clearfix d-md-none" />
+
+		          	<!-- Grid column -->
+		          	<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+		            	<h4 class="text-uppercase mb-4 font-weight-bold">Contacto</h4>
+		            	<p><i class="fas fa-home mr-3"></i>Puebla, Puebla</p>
+		            	<p><i class="fas fa-envelope mr-3"></i>contacto.lcc@gmail.com</p>
+		            	<p><i class="fas fa-phone mr-3"></i>+52 222 222 22 22</p>
+		          	</div>
+		          	<!-- Grid column -->
+
+		          	<hr class="w-100 clearfix d-md-none" />
+
+		          	<!-- Grid column -->
+		          	<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 mb-5">
+		            	<h4 class="text-uppercase mb-4 font-weight-bold">Síguenos</h4>
+
+		            	<!-- Facebook -->
+			            <a class=" text-white social-icon" href="#!" role="button">
+			               <i class="bi bi-facebook"></i>
+			            </a>
+
+			            <!-- Twitter -->
+			            <a class=" text-white social-icon" href="#!" role="button">
+			               <i class="bi bi-twitter"></i>
+			          	</a>
+
+			            <!-- Google -->
+			            <a class=" text-white social-icon" href="#!" role="button">
+			               <i class="bi bi-google"></i>
+			          	</a>
+
+			            <!-- Instagram -->
+			            <a class=" text-white social-icon" href="#!" role="button">
+			               <i class="bi bi-instagram"></i>
+			          	</a>
+
+			            <!-- Linkedin -->
+			            <a class=" text-white social-icon" href="#!" role="button">
+			               <i class="bi bi-linkedin "></i>    <!---- CHANGE FOR INDEED LOGO-LINK ---->
+			          	</a>
+		          </div>
+		        </div>
+		        <!--Grid row-->
+	        </section>
+	        <!-- Section: Links -->
+	    </div>
+	    <!-- Grid container -->
+
+	    <!-- Copyright -->
+	    <div class="text-center p-3 mt-1" style="background-color: rgba(0, 0, 0, 0.2); font-size: 1.3rem;">
+	    	© 2020 Copyright:
+	      	<a class="text-white title-sub" href="index.html">LCC Contact Center</a>
+	    </div>
+	</footer>
+
+
+
+
+
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      }
+    }
+    </script>
+</body>
+</html>

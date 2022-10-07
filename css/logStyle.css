@@ -1,0 +1,142 @@
+/******************* INICIO SESION.HTML *********************/
+:root{
+	/** COLORES **/
+	--primario: #1693a5;   /*22,147,165*/
+	--secundario: #45b5c4; /*69,181,196*/
+	--primario-light: #c7ede8;
+	--secundario-light: #a0ded6;
+}
+#fondo{
+	background-image: url("../img/Abstract-minimalist.jpg"); 
+	background-repeat: none; 
+	background-size: cover;
+	background-position: center; 
+	width: 100vw; 
+	height: 100vh; 
+	display: flex; 
+	justify-content: center; 
+	align-content: center;
+}
+#formulario{
+	background-color: white;  
+	border-radius: 2rem; 
+	margin: auto; 
+	padding: 3rem; 
+	width: 25rem;
+	
+}
+#imgUser{
+	width: 70px; 
+	height: 70px; 
+	margin: auto; 
+	border-radius: 50%; 
+	background-color: var(--primario);
+}
+#imgUser p{
+	height: 100%; 
+	width: 100%; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+}
+#icon{
+	font-size: 2.5rem; 
+	color: var(--primario-light);
+}
+#formulario h3{
+	font-size: 25px;
+}
+input[type=name]:focus,
+input[type=password]:focus{
+	border: solid var(--primario) thin;
+	box-shadow: 0 0 0 2px rgba(69,181,196,0.5);
+	
+}
+input:hover{
+	border-color: grey;
+}
+.enlaces{
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center;
+}
+#formulario a{
+	font-size: 14px;
+	width: fit-content;
+	color: var(--primario);
+	text-decoration: none;
+}
+#button-type3{
+	font-size: 16px;
+	border-radius: 25px;
+	padding: 8px 30px;
+	width: 80%;
+	background-color: var(--primario);
+	border-color: var(--primario);
+}
+#button-type3:hover{
+	background-color: var(--primario-light);
+	color: var(--primario);
+	border: solid var(--primario) thin;
+	padding: 8px 30px;
+	transition: .5s;
+}
+
+/***** Screen breakpoints *****/
+@media (max-width: 767px){
+	#formulario{
+		min-width: 25rem;
+	}
+	#formulario a{
+		display: none;
+	}
+}
+@media (max-width: 575px){
+	#formulario{
+		width: 23rem;
+		min-width: 20rem;
+	}
+	#imgUser{
+		width: 65px; 
+		height: 65px; 
+	}
+	#icon{
+		font-size: 2.2rem; 
+	}
+	#formulario h3{
+		font-size: 22px;
+	}
+}
+
+
+/*** Animations ***/
+
+/* Fade In */
+.animate {
+  animation-duration: 1.8s;
+  animation-name: animate-fade;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
+}
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/* Slide In */
+.animate.slide { 
+	animation-name: animate-slide; 
+}
+@keyframes animate-slide {
+	0% {
+		opacity: 0;
+		transform: translate(0,30px);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translate(0,0);
+	}
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  .animate { animation: none !important; }
+}
