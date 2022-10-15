@@ -41,7 +41,7 @@
 }
 #icon{
 	font-size: 2.5rem; 
-	color: var(--primario-light);
+	color: white;
 }
 #formulario h3{
 	font-size: 25px;
@@ -76,7 +76,7 @@ input:hover{
 	border-color: var(--primario);
 }
 #button-type3:hover{
-	background-color: var(--primario-light);
+	background-color: transparent;
 	color: var(--primario);
 	border: solid var(--primario) thin;
 	padding: 8px 30px;

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vacantes</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<!----- NAVBAR Y HEADER ----->
+	<nav class="navbar navbar-expand-md nav-sup">	<!--- Navbar colapsa cuando pantalla chica --->
+		<div class="container-md nav-contene">
+			<!--- LOGO --->
+			<a class="navbar-brand" href="index.html" id="logo__title">LCC<b>ContactCenter</b></a>
+			<!--- Boton modal --->
+			<button id="menu__toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			   	<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!--- Enlaces navegación NavBar --->
+			<div class="collapse navbar-collapse navegacion" id="navbarSupportedContent">
+			    <ul class="navbar-nav mb-2 mb-lg-0 navegacion__enlaces">
+				    <li class="nav-item list-element">
+				        <a class="nav-link" href="nosotros.html" id="header__link">Nosotros</a>
+				    </li>
+				    <li class="nav-item list-element">
+				        <a class="nav-link" href="#" id="header__link">Vacantes</a>
+				    </li>
+				    <li class="nav-item list-element">
+				        <a class="nav-link" href="contacto.html" id="header__link">Contacto</a>
+				    </li>
+			    </ul>
+				<a class="btn btn-outline-success" href="logIn.html" id="log__in">Iniciar Sesión</a>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+	<!----- SECTION PRINCIPAL ----->
+	<section class="container-fluid row" id="section-princi">
+		<div class="col-11 col-sm-10 col-md-10 col-lg-5" id="princi-contene">
+			<h2 class="text-uppercase">Se parte de nuestro <span class="title-sub">gran</span> equipo</h2>
+			<h4 class="mt-4 mb-5">Dignissimos officiis tempora rem, omnis perferendis, corrupti fugiat quibusdam aliquam iste alias nihil voluptas debitis impedit.</h4>
+			<div class="row row-cols-1 row-cols-sm-2 py-2" id="row-btns">
+				<div class="col-11 col-sm-4" id="contene-btn" style="margin-right: 0.5rem;">
+					<a class="btn btn-primary m-0 h-100 w-100" id="io" type="button" href="#section-vacancy">Ver vacantes</a>
+				</div>
+				<div class="col-11 col-sm-4" id="contene-btn" style="margin-left: 0.5rem;">
+					<a class="btn btn-primary m-0 h-100 w-100" id="io-Out" type="button" href="#section-culture">Conocer más</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-11 col-sm-7 col-md-7 col-lg-5" id="princi-img">
+			<img src="img/pngfind.com-who-am-i-png-3524690.png" class="h-100 w-100">
+		</div>
+	</section>
+
+
+
+
+
+	<!----- SECTION CULTURE ----->
+	<section class="container-fluid pb-5" id="section-culture">
+		<div class="titulo-section text-center">
+			<h5 class="text-uppercase" id="map-title">Nuestra cultura</h5>
+			<h2 class="text-uppercase smdv-subtitle"><span class="title-sub">Excelente</span> ambiente laboral</h2>
+		</div>
+		<!-- Flexbox Images -->
+		<div class="container-xl row" id="row-imgs">
+			<div class="bicolumn">
+		  		<img src="https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMzfHxlbnRlcnByaXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="flex-img" alt="">
+		  		<img src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUxfHxlbnRlcnByaXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="flex-img" alt="">
+		  	</div>
+		  	<div class="column">
+		  		<img src="https://images.unsplash.com/photo-1535957998253-26ae1ef29506?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTY2fHxlbnRlcnByaXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="flex-img" alt="">
+		  	</div>
+		  	<div class="bicolumn">
+		  		<img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fGVudGVycHJpc2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="flex-img" alt="">
+		  		<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI3fHxlbnRlcnByaXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="flex-img" alt="">
+		  	</div>
+		</div>
+	</section>
+
+
+
+
+	<!----- SECTION OUR COWORKERS ----->
+	<section class="container-fluid py-5" id="section-coworkers">
+		<div class="titulo-section text-center container-lg">
+			<h5 class="text-uppercase" id="map-title" style="margin-top: 0;">Testimonios</h5>
+			<h2 class="text-uppercase smdv-subtitle">Conoce las <span class="title-sub">opiniones</span> de nuestros ejecutivos</h2>
+		</div>
+		<div class="container-lg" id="contain-testimonials">
+			<div class="card-coworker">
+				<div class="img-coworker">
+					<img src="https://guidocattaneo.com/wp-content/uploads/2021/05/Fotos-Guido-Cattaneo-blog-copy.png" alt="Ejecutivo">
+				</div>
+				<div class="info-coworker">
+					<div>
+						<h3>"He trabajado en LCC durante 3 años, es un gran lugar para trabajar con grandes prestaciones y un buen ambiente laboral."</h3>
+					</div>
+					<h4>Jhon Doe, <span class="title-sub">Ejecutivo Telefónico</span></h4>
+				</div>
+			</div>
+
+			<div class="card-coworker">
+				<div class="img-coworker">
+					<img src="https://guidocattaneo.com/wp-content/uploads/2021/05/Fotos-Guido-Cattaneo-blog-copy.png" alt="Ejecutivo">
+				</div>
+				<div class="info-coworker">
+					<div>
+						<h3>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut enim totam doloremque distinctio quas eligendi odio excepturi voluptatem."</h3>
+					</div>
+					<h4>Megan Doe, <span class="title-sub">Ejecutivo Telefónico</span></h4>
+				</div>
+			</div>
+
+			<div class="card-coworker">
+				<div class="img-coworker">
+					<img src="https://guidocattaneo.com/wp-content/uploads/2021/05/Fotos-Guido-Cattaneo-blog-copy.png" alt="Ejecutivo">
+				</div>
+				<div class="info-coworker">
+					<div>
+						<h3>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nesciunt aperiam vitae quia at ullam, quod fugiat perferendis numquam nulla delectus explicabo dolore voluptas nostrum."</h3>
+					</div>
+					<h4>Michael Doe, <span class="title-sub">Ejecutivo Telefónico</span></h4>
+				</div>
+			</div>
+
+			<div class="card-coworker">
+				<div class="img-coworker">
+					<img src="https://guidocattaneo.com/wp-content/uploads/2021/05/Fotos-Guido-Cattaneo-blog-copy.png" alt="Ejecutivo">
+				</div>
+				<div class="info-coworker">
+					<div>
+						<h3>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus maxime reiciendis repellat recusandae dolore non a molestias eveniet cupiditate."</h3>
+					</div>
+					<h4>Jessica Doe, <span class="title-sub">Ejecutivo Telefónico</span></h4>
+				</div>
+			</div>
+		</div>
+	</section>	
+
+
+
+
+
+	<!----- SECTION VACANCY ----->
+	<section class="container-fluid pb-5" id="section-vacancy">
+		<div class="titulo-section container-xl">
+			<h5 class="text-uppercase" id="map-title">Vacantes</h5>
+			<h2 class="text-uppercase smdv-subtitle"><span class="title-sub">Forma parte</span> de este gran equipo</h2>
+		</div>
+		<div class="container-xl" style="padding: 0;">
+			<div class="container-fluid">
+				<div class="vac-row row row-cols-1 row-cols-sm-1 row-cols-lg-2">
+
+					<!--- Card Vacant 1 --->
+			   	<div class="vac-col col-11 col-sm-10 col-lg-6">
+			   		<div id="vac-ubi">
+			   			<div>
+			   				<i class="bi bi-clock"></i>
+			   				<h5 id="vac-tiempo">Medio Tiempo</h5>	
+			   			</div>
+			   			</h5>
+			   			<hr>
+			   			<div>
+			   				<i class="bi bi-geo-alt"></i>
+			   				<h5 id="vac-lugar">Puebla, Pue</h5>
+			   			</div>
+			   		</div>
+			   		<h3 id="vac-title">Operador telefónico</h3>
+			   		<p id="vac-descrip">Si buscas generar ingresos y continuar con tus estudios es tu oportunidad, labora con nosotros.</p>
+			   		<h4 id="vac-salario">$ 1.00</h4>
+			   		<div class="text-center">
+			   			<button class="btn btn-primary" id="openModal">Aplicar</button>
+			   		</div>
+			   	</div>
+			   	<!--- Modal Form --->
+			   	<div id="myModal" class="modal">
+			   		<span class="close">&times;</span>  
+					  	<div class="modal-content">
+					    	<div class="modal-header">
+					      	<h3 id="vac-title" class="text-center">Operador telefónico</h3>
+					      	<div id="vac-ubi">
+					   			<div>
+					   				<i class="bi bi-clock"></i>
+					   				<h5 id="vac-tiempo">Medio Tiempo</h5>	
+					   			</div>
+					   			</h5>
+					   			<hr>
+					   			<div>
+					   				<i class="bi bi-geo-alt"></i>
+					   				<h5 id="vac-lugar">Puebla, Pue</h5>
+					   			</div>
+					   		</div>
+					    	</div>
+					    	<div class="modal-body">
+					      	<p id="vac-descrip">
+									Si buscas generar ingresos y continuar con tus estudios es tu oportunidad, labora con nosotros.<br>
+									¡Solicita tu entrevista ahora mismo!
+									<br><br>
+									::::: Beneficios :::::
+									<br>
+									<br>-- Ingreso fijo
+									<br>-- Comisiones NO TOPADAS
+									<br>-- Capacitación pagada
+									<br>-- Labora por temporada o a largo plazo
+									<br>-- Descansa todos los domingos
+									<br>-- Proceso de integración seguro e inmediato
+									<br>-- 100% Trabajo de oficina
+									<br>-- Bono por desempeño
+									<br>-- Labora ½ tiempo
+									<br>-- Servicio de enfermeria gratuito
+									<br>-- Ingresos de hasta $6000 mensuales
+									<br><br>
+									Horarios:
+									<br>
+									Lunes a Sábado
+									<br>· Vespertino &emsp;6 hrs: 3 p.m - 9 p.m
+									<br>· Matutino &nbsp; &emsp; 6 hrs: 9 a.m - 3 p.m
+									<br><br>
+									Nivel de educación deseada:
+									Media Superior
+									<br>
+									Nivel de experiencia deseada:
+									Nivel Inicial
+									<br>
+								</p>
+								<h4 id="vac-salario-t">Sueldo:</h4>
+			   				<h4 id="vac-salario">$4,000.00 - $6,000.00</h4>
+
+			   				<form id="modalForm">
+			   					<h3 class="text-center text-uppercase mb-4">¡Postúlate Hoy!</h3>
+			   					<div class="row rowForm" style="justify-content: start;">
+										<div class="colForm col-12 col-sm-11 col-md-6">
+											<label for="nameForm" class="form-label">Nombre</label>
+					  						<input type="name" class="form-control" id="nameForm" placeholder="Jhon Doe">
+										</div>
+										<div class="colForm col-12 col-sm-11 col-md-6">
+											<label for="emailForm" class="form-label">Email address</label>
+					  						<input type="email" class="form-control" id="emailForm" placeholder="name@example.com">
+										</div>
+										<div class="colForm col-12 col-sm-11 col-md-6">
+					  						<label for="phoneForm" class="form-label">Teléfono</label>
+					  						<input type="tel" class="form-control" id="phoneForm" placeholder="222 222 22 22">
+										</div>
+									</div>
+									<div class="row rowForm text-center" style="margin-top: 4rem; margin-bottom: 2rem;">
+										<div class="col">
+											<input class="btn btn-primary" id="button-type3" style="font-size: 1.6rem;" type="submit" value="Enviar">
+										</div>
+									</div>
+			   				</form>
+
+					    	</div>
+					  	</div>
+					</div>
+
+
+
+			   	<!--- Card Vacant 2--->
+			    	<div class="vac-col col-11 col-sm-10 col-lg-6">
+			   		<div id="vac-ubi">
+			   			<div>
+			   				<i class="bi bi-clock"></i>
+			   				<h5 id="vac-tiempo">Tiempo Completo</h5>	
+			   			</div>
+			   			</h5>
+			   			<hr>
+			   			<div>
+			   				<i class="bi bi-geo-alt"></i>
+			   				<h5 id="vac-lugar">Puebla, Pue</h5>
+			   			</div>
+			   		</div>
+			   		<h3 id="vac-title">Ejecutivo telefónico</h3>
+			   		<p id="vac-descrip">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Ullam, doloribus, minus? Corrupti, omnis, at.</p>
+			   		<h4 id="vac-salario">$ 100000.00</h4>
+			   		<div class="text-center">
+			   			<button class="btn btn-primary" id="openModal">Aplicar</button>
+			   		</div>
+			   	</div>
+			   	
+
+
+			   	<!--- Card Vacant 3--->
+			   	<div class="vac-col col-11 col-sm-10 col-lg-6">
+			   		<div id="vac-ubi">
+			   			<div>
+			   				<i class="bi bi-clock"></i>
+			   				<h5 id="vac-tiempo">Tiempo Completo</h5>	
+			   			</div>
+			   			</h5>
+			   			<hr>
+			   			<div>
+			   				<i class="bi bi-geo-alt"></i>
+			   				<h5 id="vac-lugar">Zacapoaxtla, Pue</h5>
+			   			</div>
+			   		</div>
+			   		<h3 id="vac-title">Operador/a telefónico</h3>
+			   		<p id="vac-descrip">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Ullam, doloribus, minus? Corrupti, omnis, at.</p>
+			   		<h4 id="vac-salario">$ 100000.00</h4>
+			   		<div class="text-center">
+			   			<button class="btn btn-primary" id="openModal">Aplicar</button>
+			   		</div>
+			   	</div>
+
+
+
+			   	<!--- Card Vacant 4--->
+			   	<div class="vac-col col-11 col-sm-10 col-lg-6">
+			   		<div id="vac-ubi">
+			   			<div>
+			   				<i class="bi bi-clock"></i>
+			   				<h5 id="vac-tiempo">Medio Tiempo</h5>	
+			   			</div>
+			   			</h5>
+			   			<hr>
+			   			<div>
+			   				<i class="bi bi-geo-alt"></i>
+			   				<h5 id="vac-lugar">Teziutlán, Pue</h5>
+			   			</div>
+			   		</div>
+			   		<h3 id="vac-title">Operador/a telefónico</h3>
+			   		<p id="vac-descrip">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Ullam, doloribus, minus? Corrupti, omnis, at.</p>
+			   		<h4 id="vac-salario">$ 100000.00</h4>
+			   		<div class="text-center">
+			   			<button class="btn btn-primary" id="openModal">Aplicar</button>
+			   		</div>
+			   	</div>
+
+
+
+			  	</div>
+			</div>
+		</div>
+	</section> 
+
+
+
+
+
+	<!----- FOOTER ----->
+	<footer class="text-center text-lg-start text-white container-fluid">
+	  	<!-- Grid container -->
+	    <div class="container p-4 pb-0">
+	        <!-- Section: Links -->
+	        <section class="">
+		        <!--Grid row-->
+		        <div class="row">
+		           <!-- Grid column -->
+			        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+			          	<h4 class="text-uppercase mb-4 font-weight-bold">  <!--------****SWITCH THIS HEAD FOR LOGO****-------->
+			            	Company Logo
+			            </h4>
+			        </div>
+		            <!-- Grid column -->
+
+		          	<hr class="w-100 clearfix d-md-none" />
+
+		          	<!-- Grid column -->
+		          	<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+		            	<h4 class="text-uppercase mb-4 font-weight-bold">Páginas</h4>
+		            	<p>
+		              		<a class="text-white footer-link" href="index.html">Inicio</a>
+		            	</p>
+			            <p>
+			              <a class="text-white footer-link" href="nosotros.html">Nosotros</a>
+			            </p>
+			            <p>
+			              <a class="text-white footer-link" href="#">Vacantes</a>
+			            </p>
+			            <p>
+			              <a class="text-white footer-link" href="contacto.html">Contacto</a>
+			            </p>
+		          	</div>
+		          	<!-- Grid column -->
+
+		          	<hr class="w-100 clearfix d-md-none" />
+
+		          	<!-- Grid column -->
+		          	<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+		            	<h4 class="text-uppercase mb-4 font-weight-bold">Contacto</h4>
+		            	<p><i class="fas fa-home mr-3"></i>Puebla, Puebla</p>
+		            	<p><i class="fas fa-envelope mr-3"></i>contacto.lcc@gmail.com</p>
+		            	<p><i class="fas fa-phone mr-3"></i>+52 222 222 22 22</p>
+		          	</div>
+		          	<!-- Grid column -->
+
+		          	<hr class="w-100 clearfix d-md-none" />
+
+		          	<!-- Grid column -->
+		          	<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 mb-5">
+		            	<h4 class="text-uppercase mb-4 font-weight-bold">Síguenos</h4>
+
+		            	<!-- Facebook -->
+			            <a class=" text-white social-icon" href="#!" role="button">
+			               <i class="bi bi-facebook"></i>
+			            </a>
+
+			            <!-- Twitter -->
+			            <a class=" text-white social-icon" href="#!" role="button">
+			               <i class="bi bi-twitter"></i>
+			          	</a>
+
+			            <!-- Google -->
+			            <a class=" text-white social-icon" href="#!" role="button">
+			               <i class="bi bi-google"></i>
+			          	</a>
+
+			            <!-- Instagram -->
+			            <a class=" text-white social-icon" href="#!" role="button">
+			               <i class="bi bi-instagram"></i>
+			          	</a>
+
+			            <!-- Linkedin -->
+			            <a class=" text-white social-icon" href="#!" role="button">
+			               <i class="bi bi-linkedin "></i>    <!---- CHANGE FOR INDEED LOGO-LINK ---->
+			          	</a>
+		          </div>
+		        </div>
+		        <!--Grid row-->
+	        </section>
+	        <!-- Section: Links -->
+	    </div>
+	    <!-- Grid container -->
+
+	    <!-- Copyright -->
+	    <div class="text-center p-3 mt-1" style="background-color: rgba(0, 0, 0, 0.2); font-size: 1.3rem;">
+	    	© 2020 Copyright:
+	      	<a class="text-white title-sub" href="index.html">LCC Contact Center</a>
+	    </div>
+	</footer>
+
+
+
+
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      }
+    }
+    </script>
+</body>
+</html>

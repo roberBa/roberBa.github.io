@@ -15,7 +15,7 @@
 
 
 	<!----- NAVBAR Y HEADER ----->
-	<nav class="navbar navbar-expand-md">	<!--- Navbar colapsa cuando pantalla chica --->
+	<nav class="navbar navbar-expand-md nav-sup">	<!--- Navbar colapsa cuando pantalla chica --->
 		<div class="container-md nav-contene">
 			<!--- LOGO --->
 			<a class="navbar-brand" href="index.html" id="logo__title">LCC<b>ContactCenter</b></a>
@@ -31,13 +31,13 @@
 				        <a class="nav-link" href="nosotros.html" id="header__link">Nosotros</a>
 				    </li>
 				    <li class="nav-item list-element">
-				        <a class="nav-link" href="#" id="header__link">Vacantes</a>
+				        <a class="nav-link" href="vacantes.html" id="header__link">Vacantes</a>
 				    </li>
 				    <li class="nav-item list-element">
 				        <a class="nav-link" href="contacto.html" id="header__link">Contacto</a>
 				    </li>
 			    </ul>
-				<a class="btn btn-outline-success" href="logIn.html" id="log__in">Iniciar Sesión</a>
+				<a class="btn btn-outline-success text-white" href="logIn.html" id="log__in">Iniciar Sesión</a>
 			</div>
 		</div>
 	</nav>
@@ -94,7 +94,7 @@
   						<input type="name" class="form-control" id="nameForm" placeholder="Jhon Doe">
 					</div>
 					<div class="colForm col-12 col-sm-6">
-						<label for="emailForm" class="form-label">Email address</label>
+						<label for="emailForm" class="form-label">Email</label>
   						<input type="email" class="form-control" id="emailForm" placeholder="name@example.com">
 					</div>
 				</div>
@@ -132,7 +132,7 @@
 
 			<div class="col-lg-5 col-md-11 row" id="title-cliente">
 				<div class="col-12 col-sm" id="titulo">
-					<h3 id="icono__title">Nuestros clientes</h3>
+					<h3 class="text-white" id="icono__title">Nuestros clientes</h3>
 				</div>
 				<div class="col-12 col-sm" id="subtitulo">
 					<h3>Orgullosos de colaborar junto a <span class="title-sub">marcas líderes</span></h3>
@@ -168,7 +168,7 @@
 
 
 	<!----- SECCION DONDE ENCONTRARNOS ----->
-	<section class="container-fluid" style="margin-top: 20rem;">
+	<section class="container-fluid" id="section-encuentra">
 		<h5 class="mb-3 centrar-texto" id="map-title">Donde encontrarnos</h5>
 		<h2 class="centrar-texto smdv-subtitle mx-5 text-uppercase"><span class="title-sub">Visítanos</span> en nuestras instalaciones cuando gustes</h2>
 
@@ -178,11 +178,11 @@
 	<!----- PUEBLA MAP ----->
 			<div class="ubi row mb-4">
 				<!-- Google Map -->
-				<div class="map col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+				<div class="map col-10 col-sm-11 col-md-6 col-lg-6">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.7506713127354!2d-98.22037187519514!3d19.04168279064869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7daee1927af%3A0xd421c9b7d15dfa64!2sLCC%20Contact%20Center!5e0!3m2!1ses-419!2smx!4v1664563392318!5m2!1ses-419!2smx" class="h-100 w-100" style="border-radius:3rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 				<!-- Address Container -->
-				<div class="dir col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+				<div class="dir col-10 col-sm-11 col-md-6 col-lg-6">
 					<div class="text-white" id="dir-contene">
 						<h2 class="text-uppercase" style="font-weight: bold;">Puebla</h2>
 						<h3 class=>Dirección:</h3>
@@ -230,7 +230,7 @@
 	<!----- TEZIUTLAN MAP (display 1) ----->
 			<div class="ubi disp-1 row mb-4">
 				<!-- Address Container -->
-				<div class="dir-2 col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+				<div class="dir-2 col-10 col-sm-11 col-md-6 col-lg-6">
 					<div class="text-white" id="dir-contene">
 						<h2 class="text-uppercase" style="font-weight: bold;">Teziutlán</h2>
 						<h3 class=>Dirección:</h3>
@@ -270,7 +270,7 @@
 			      </div>
 				</div>
 				<!-- Google Map -->
-				<div class="map-2 col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+				<div class="map-2 col-10 col-sm-11 col-md-6 col-lg-6">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.263498714484!2d-97.35940841257894!3d19.828800716492413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85daeb16abb9057b%3A0x1ddc59fd1b5e3d78!2sLCC%20Contact%20Center!5e0!3m2!1ses-419!2smx!4v1664824959554!5m2!1ses-419!2smx" class="h-100 w-100" style="border-radius:3rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</div>
@@ -279,11 +279,11 @@
 	<!----- TEZIUTLAN MAP (display 2) ----->
 			<div class="ubi disp-2 row mb-4">
 				<!-- Google Map -->
-				<div class="map col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+				<div class="map col-10 col-sm-11 col-md-6 col-lg-6">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.263498714484!2d-97.35940841257894!3d19.828800716492413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85daeb16abb9057b%3A0x1ddc59fd1b5e3d78!2sLCC%20Contact%20Center!5e0!3m2!1ses-419!2smx!4v1664824959554!5m2!1ses-419!2smx" class="h-100 w-100" style="border-radius:3rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 				<!-- Address Container -->
-				<div class="dir col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+				<div class="dir col-10 col-sm-11 col-md-6 col-lg-6">
 					<div class="text-white" id="dir-contene">
 						<h2 class="text-uppercase" style="font-weight: bold;">Teziutlán</h2>
 						<h3 class=>Dirección:</h3>
@@ -331,11 +331,11 @@
 	<!----- ZACAPOAXTLA MAP ----->
 			<div class="ubi row mb-4">
 				<!-- Google Map -->
-				<div class="map col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+				<div class="map col-10 col-sm-11 col-md-6 col-lg-6">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.1801379214558!2d-97.59026578529148!3d19.874614031548195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85da970791ba5401%3A0x3f76e849546256!2sLCC%20CONTACT%20CENTER%20ZACAPOAXTLA!5e0!3m2!1ses-419!2smx!4v1664825194783!5m2!1ses-419!2smx" class="h-100 w-100" style="border-radius:3rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 				<!-- Address Container -->
-				<div class="dir col-12 col-11 col-sm-11 col-md-6 col-lg-6">
+				<div class="dir col-10 col-sm-11 col-md-6 col-lg-6">
 					<div class="text-white" id="dir-contene">
 						<h2 class="text-uppercase" style="font-weight: bold;">Zacapoaxtla</h2>
 						<h3 class=>Dirección:</h3>
@@ -387,7 +387,7 @@
 
 
 	<!----- FOOTER ----->
-	<footer class="text-center text-lg-start text-white" style="background-color: var(--secundario); margin-top: 15rem;">
+	<footer class="text-center text-lg-start text-white container-fluid">
 	  	<!-- Grid container -->
 	    <div class="container p-4 pb-0">
 	        <!-- Section: Links -->
@@ -406,7 +406,7 @@
 
 		          	<!-- Grid column -->
 		          	<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-		            	<h4 class="text-uppercase mb-4 font-weight-bold">Links</h4>
+		            	<h4 class="text-uppercase mb-4 font-weight-bold">Páginas</h4>
 		            	<p>
 		              		<a class="text-white footer-link" href="index.html">Inicio</a>
 		            	</p>
@@ -414,7 +414,7 @@
 			              <a class="text-white footer-link" href="nosotros.html">Nosotros</a>
 			            </p>
 			            <p>
-			              <a class="text-white footer-link" href="#">Vacantes</a>
+			              <a class="text-white footer-link" href="vacantes.html">Vacantes</a>
 			            </p>
 			            <p>
 			              <a class="text-white footer-link" href="contacto.html">Contacto</a>
@@ -482,7 +482,6 @@
 
 
 
-	<script type="text/javascript" src="js/common.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="importmap">
     {
