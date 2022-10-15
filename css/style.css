@@ -120,10 +120,12 @@ footer{
 #header__link{
 	font-family: var(--fuenteParrafos);
 	font-size: 1.8rem;
+	color: white;
 }
 #log__in{
 	font-family: var(--fuenteParrafos);
 	font-size: 1.8rem;
+	color: white;
 }
 #menu__toggler{
 	font-size: 2.5rem;
@@ -169,12 +171,25 @@ footer{
 	#log__in{
 		margin-left: 2rem;
 		margin-bottom: 2rem;
+		color: green;
+	}
+	#log__in:hover{
+		color: white;
 	}
 	#logo__title{
 		margin-left: 2rem;
 	}
 	#menu__toggler{
 		margin-right: 2rem;
+	}
+	#header__link{
+		color: black;
+		opacity: .6;
+		padding-left: 1rem;
+	}
+	#header__link:hover{
+		border-left: solid var(--secundario) thin;
+		transition: .5s;
 	}
 }
 @media (max-width: 318px){
@@ -221,7 +236,6 @@ footer{
 	background-position: center center;
 	background-attachment: fixed;
   	display: flex;
- 	min-height: 60rem;
  	justify-content: center;
   	align-items: center;
   	margin-bottom: 15rem;
@@ -235,16 +249,16 @@ footer{
   	flex-direction: column;
   	justify-content: center;
   	align-items: center;
-  	grid-auto-columns: 1fr;
-  	grid-template-columns: 0.75fr 0.25fr;
-  	grid-template-rows: auto;
   	text-align: center;
 
 }
+.header__title{
+	margin-bottom: 3rem;
+}
 .title-1{
 	font-size: 6rem;
-	margin-bottom: 3rem;
 	line-height: 6rem;
+	margin: 0;
 	letter-spacing: 4px;
 	text-transform: uppercase;
 	color: var(--blanco	);
@@ -255,6 +269,7 @@ footer{
   	line-height: 3rem;
   	font-weight: 300;
   	color: var(--blanco);
+  	margin: 0;
 }
 .button-flex{
 	margin-top: 4rem;
@@ -262,37 +277,55 @@ footer{
 	min-width: 20rem;
 	box-sizing: border-box;
 }
-@media (max-width: 767px){
-	.header{
-		min-height: 45rem;
-	}
-	.header__title{
-		margin-top: 5rem;
+@media (max-width: 991px){
+	.header__grid{
+		padding: 0 2rem;
 	}
 	.title-1{
-		font-size: 3.5rem;
+		font-size: 4.5rem;
 	}
 	.header__subtitle{
-		font-size: 2.3rem;
+		font-size: rem;
+	}
+}
+@media (max-width: 767px){
+	.header{
+		padding: 10rem 5rem;
+	  	margin-bottom: 15rem;
+	}
+	.header__title{
+		margin-bottom: 1.5rem;
+	}
+	.title-1{
+		font-size: 3.7rem;
+	}
+	.header__subtitle{
+		font-size: 2rem;
+	}
+	.button-flex{
+		margin-top: 3rem;
 	}
 }
 @media (max-width: 575px) {
 	.header{
-		margin-bottom: 10rem;
+		padding: 8rem 2rem;
+		margin-bottom: 5rem;
 	}
 	.header__title{
-		margin-top: 5rem;
-	}
-	.header__subtitle{
-		margin-top: 1rem;
+		margin-bottom: 1.5rem;
 	}
 	.title-1{
 		font-size: 3rem;
+		letter-spacing: 2px;
+		line-height: 5rem;
 	}
 }
 @media (max-width: 400px){
-	.header{
-		margin-bottom: 8rem;
+	.title-1{
+		line-height: 4rem;
+	}
+	.header__subtitle{
+		font-size: 1.8rem;
 	}
 }
 
@@ -768,7 +801,6 @@ footer{
   	color: var(--blanco);
 }
 .button-flex{
-	margin-top: 4rem;
 	padding: 5px;
 	min-width: 20rem;
 	box-sizing: border-box;
